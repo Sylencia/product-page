@@ -37,7 +37,7 @@ export default class ProductPage extends Component {
           filterSelections={this.filterSelections}
           onFilterSelect={this.handleFilterSelect}
         />
-        <ProductGrid products={products} filter={filter}/>
+        <ProductGrid products={products} filter={filter} />
       </div>
     );
   }

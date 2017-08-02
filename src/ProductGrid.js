@@ -6,9 +6,12 @@ export default class ProductGrid extends Component {
     const { products, filter } = this.props;
 
     // Filter the products if it's not on the default option (which is '')
+    // based on size.
     let filteredProducts = products;
-    if(filter !== '') {
-      filteredProducts = products.filter(product => product.size.includes(filter));
+    if (filter !== '') {
+      filteredProducts = products.filter(product =>
+        product.size.includes(filter)
+      );
     }
 
     // For each product, create a ProductDetails component for rendering.

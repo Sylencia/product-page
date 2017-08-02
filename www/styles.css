@@ -21,6 +21,10 @@ body {
 	font-size: 1.5em;
 }
 
+.filter {
+	width: 200px;
+}
+
 /* Small screens */
 @media all and (max-width: 500px) {
 	.headerBar {
@@ -30,10 +34,6 @@ body {
 			 will look more like a vertical menu */
 		margin-top: 0;
 	}
-}
-
-.filter {
-	width: 200px;
 }
 
 /* ProductGrid styling */

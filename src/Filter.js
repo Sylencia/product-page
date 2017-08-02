@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class Filter extends Component {
   selectFilter = e => {
     this.props.onFilterSelect(e.target.value);
-  }
+  };
 
   render() {
     const { filterSelections } = this.props;
