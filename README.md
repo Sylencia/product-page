@@ -18,3 +18,4 @@ The following observations were noticed while testing the product during develop
 
 ## Notes
 - To avoid using frameworks, flexboxes were used liberally along with a media query for the header to achieve a more responsive feel.
+- To save on time writing the webpack configuration, I decided use a single stylesheet (located at www/styles.css) and bypass loading the css through webpack.  
