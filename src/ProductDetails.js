@@ -10,9 +10,20 @@ export default class ProductDetails extends Component {
     // data provided in the json to display the images without having to import each manually.
     return (
       <li className="productDetails">
-        <img src={require(`${imgAssetSrc}`)} />
-        {details.isSale.toString()}
-        {details.price}
+        <img className="productDetails-image" src={require(`${imgAssetSrc}`)} />
+        <div>
+          {details.isSale && <span className="productDetails-sale">Sale</span>}
+          {details.isExclusive &&
+            <span className="productDetails-exclusive">Exclusive</span>}
+        </div>
+        <div className="productDetails-detailContainer">
+          <span className="productDetails-name">
+            {details.productName}
+          </span>
+          <span className="productDetails-price">
+            {details.price}
+          </span>
+        </div>
       </li>
     );
   }

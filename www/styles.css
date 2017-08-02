@@ -1,5 +1,5 @@
 body {
-	max-width: 960px;
+	width: 1280px;
 	margin: auto;
 	font-family: 'Helvetica';
 }
@@ -49,7 +49,48 @@ body {
 	/* Use border-box to make calculations easier
 		 by having width include padding/borders */
 	box-sizing: border-box;
-	width: 240px;
+	width: 320px;
+	height: 310px;
 	padding: 5px;
-	border: 1px grey solid;
+	border: 0.5px grey solid;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.productDetails-image {
+	height: 220px;
+	width: 220px;
+	margin: 0 auto;
+}
+
+.productDetails-sale {
+	background-color: red;
+	color: white;
+	padding: 10px;
+	margin: 2px;
+}
+
+.productDetails-exclusive {
+	background-color: green;
+	color: white;
+	padding: 10px;
+	margin: 2px;
+}
+
+.productDetails-detailContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.productDetails-name {
+	text-align: left;
+	word-wrap: break-word;
+}
+
+.productDetails-price {
+	text-align: right;
+	font-size: 1.6em;
 }
