@@ -2,7 +2,7 @@
 
 ## Usage
 ```
-yarn
+yarn (or npm install)
 npm start
 
 Open browser at localhost:3000
