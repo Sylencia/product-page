@@ -1,10 +1,13 @@
 body {
 	max-width: 960px;
 	margin: auto;
+	font-family: 'Helvetica';
 }
 
+/* Header styling */
+
 /* Large screens */
-.headerbar {
+.headerBar {
 	/* Add a margin on the top to look a bit better */
 	margin-top: 10px;
 	padding: 5px;
@@ -14,18 +17,39 @@ body {
 	justify-content: space-between;
 }
 
-.headerbar-title {
+.headerBar-title {
 	font-size: 1.5em;
-	font-family: 'Helvetica';
 }
 
 /* Small screens */
 @media all and (max-width: 500px) {
-	.headerbar {
+	.headerBar {
 		/* Use column as there's not enough space to go horizontally */
 		flex-direction: column;
 		/* Don't add a margin as it's not needed on a smaller screen where it
 			 will look more like a vertical menu */
 		margin-top: 0;
 	}
+}
+
+/* ProductGrid styling */
+.productGrid {
+	/* Remove default styling used for ul elements */
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+/* ProductDetails styling */
+.productDetails {
+	/* Use border-box to make calculations easier
+		 by having width include padding/borders */
+	box-sizing: border-box;
+	width: 240px;
+	padding: 5px;
+	border: 1px grey solid;
 }
