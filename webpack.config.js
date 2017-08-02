@@ -18,9 +18,13 @@ const config = {
         loaders: ['react-hot', 'babel'],
       },
       {
-        test: /\.css$/,
-        loader: ['style', 'css'],
+        test: /\.json$/,
+        loaders: ['json'],
       },
+      {
+        test: /\.(jpg|png)$/,
+        loaders: ['url?limit=25000'],
+      }
     ],
   },
   resolveLoader: {
@@ -35,7 +39,8 @@ const config = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin(),  ],
+    new webpack.NoErrorsPlugin(),
+  ],
 };
 
 module.exports = config;
